@@ -1,6 +1,17 @@
 // complete the function
 function prime (num) {
-  // code goes here
+  var i = 2;
+  while(i < num){
+    var y = num % i;
+    if(y == 0){
+      return "False"
+    }else{
+      if(i == (num - 1)){
+        return "True";
+      };
+      i++;
+    };
+  };
 }
 
 function solution (arg) {
